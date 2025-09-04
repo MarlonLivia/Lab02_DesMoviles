@@ -22,15 +22,23 @@ fun contruirAcuario(){
    // acuario6.imprimirTamano()
    // val acuario7 = Acuario(largo = 25, ancho = 25, alto = 40)
    // acuario7.imprimirTamano()
-    val miAcuario = Acuario(ancho = 25, largo = 25, alto = 40)
-    miAcuario.imprimirTamano()
+    //val miAcuario = Acuario(ancho = 25, largo = 25, alto = 40)
+   // miAcuario.imprimirTamano()
 
-    // Crear un objeto de la subclase TanqueTorre
-    val miTorre = TanqueTorre(diametro = 25, alto = 45)
-    miTorre.imprimirTamano()
+   // Crear un objeto de la subclase TanqueTorre
+   // val miTorre = TanqueTorre(diametro = 25, alto = 45)
+  //  miTorre.imprimirTamano()
 }
+fun crearPeces() {
+    // Instanciamos un Tiburón y un PezPayaso
+    val tiburon = Tiburon()
+    val pezPayaso = PezPayaso()
 
+    // Imprimimos el color de cada uno
+    println("El color del Tiburón es: ${tiburon.color}")
+    println("El color del Pez Payaso es: ${pezPayaso.color}")
+}
 fun main(){
-        contruirAcuario()
+        crearPeces()
     }
 
