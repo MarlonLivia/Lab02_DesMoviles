@@ -1,8 +1,6 @@
 package acuario
 
-
-
-fun contruirAcuario(){
+//fun contruirAcuario(){
   //  val acuario1 = Acuario()
   //  acuario1.imprimirTamano()
     // altura y largo amchop (25)
@@ -28,15 +26,15 @@ fun contruirAcuario(){
    // Crear un objeto de la subclase TanqueTorre
    // val miTorre = TanqueTorre(diametro = 25, alto = 45)
   //  miTorre.imprimirTamano()
-}
+//}
 fun crearPeces() {
-    // Instanciamos un Tiburón y un PezPayaso
     val tiburon = Tiburon()
     val pezPayaso = PezPayaso()
 
-    // Imprimimos el color de cada uno
     println("El color del Tiburón es: ${tiburon.color}")
     println("El color del Pez Payaso es: ${pezPayaso.color}")
+    tiburon.comer()
+    pezPayaso.comer()
 }
 fun main(){
         crearPeces()

@@ -1,17 +1,21 @@
 package acuario
 
-// Clase abstracta Pez
-abstract class Pez {
-    // Propiedad abstracta 'color' que debe ser implementada en las subclases
+abstract class Pez : AccionPez {
     abstract val color: String
 }
 
-// Clase Tiburón que hereda de Pez
 class Tiburon : Pez() {
     override val color: String = "gris"
+
+    override fun comer() {
+        println("Cazar y comer peces")
+    }
 }
 
-// Clase PezPayaso que hereda de Pez
 class PezPayaso : Pez() {
     override val color: String = "dorado"
+
+    override fun comer() {
+        println("Comer algas")
+    }
 }
